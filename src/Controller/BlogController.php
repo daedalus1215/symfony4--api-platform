@@ -15,6 +15,7 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Serializer\Serializer;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\ParamConverter;
 
 
 /**
@@ -48,22 +49,23 @@ class BlogController extends AbstractController
 
     /**
      * @Route("/post/{id}", name="blog_by_id", requirements={"id"="\d+"})
+     * @ParamConverter("post", class="App:BlogPost")
      */
-    public function post($id)
+    public function post(BlogPost $post)
     {
-        return $this->json(
-            $this->getDoctrine()->getRepository(BlogPost::class)->find($id)
-        );
+        return $this->json($post); // this is the same as doing find($id)
     }
 
     /**
      * @Route("/post/{slug}", name="blog_by_slug")
      */
-    public function postBySlug($slug)
+    public function postBySlug(BlogPost $post)
     {
-        return $this->json(
-            $this->getDoctrine()->getRepository(BlogPost::class)->findBy(['slug' => $slug])
-        );
+//        return $this->json(
+//            $this->getDoctrine()->getRepository(BlogPost::class)->findBy(['slug' => $slug])
+//        );
+        // same as above
+        return $this->json($post);
     }
 
     /**
