@@ -58,7 +58,7 @@ class BlogController extends AbstractController
 
     /**
      * @Route("/post/{slug}", name="blog_by_slug")
-     * @ParamConverter("post", options={"mapping", {"slug", "slug"}})
+     * @ParamConverter("post", options={"mapping": {"slug": "slug"}})
      */
     public function postBySlug(BlogPost $post)
     {
