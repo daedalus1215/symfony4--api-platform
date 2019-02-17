@@ -28,10 +28,12 @@
       <file leaf-file-name="BlogController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/BlogController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="60" column="59" selection-start-line="60" selection-start-column="59" selection-end-line="60" selection-end-column="59" />
+            <state relative-caret-position="462">
+              <caret line="98" column="49" selection-start-line="98" selection-start-column="49" selection-end-line="98" selection-end-column="49" />
               <folding>
                 <element signature="e#118#142#0#PHP" expanded="true" />
+                <element signature="e#1728#1796#0#PHP" />
+                <element signature="e#1801#2204#0#PHP" />
               </folding>
             </state>
           </provider>
@@ -44,6 +46,7 @@
       <find>$request</find>
       <find>new JsonResponse</find>
       <find>make</find>
+      <find>getRepository</find>
     </findStrings>
     <replaceStrings>
       <replace>$this-&gt;json</replace>
@@ -138,10 +141,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="260" />
+    <option name="x" value="-46" />
+    <option name="y" value="224" />
     <option name="width" value="2722" />
-    <option name="height" value="1020" />
+    <option name="height" value="1178" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -228,27 +231,27 @@
       <workItem from="1549936656446" duration="2486000" />
       <workItem from="1550055562847" duration="3850000" />
       <workItem from="1550142378220" duration="7039000" />
-      <workItem from="1550442406337" duration="1062000" />
+      <workItem from="1550442406337" duration="3263000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14437000" />
+    <option name="totallyTimeSpent" value="16638000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25774753" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.26170376" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50037795" side_tool="true" weight="0.6639893" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.33333334" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49962208" weight="0.6639893" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -301,6 +304,8 @@
           <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="e#118#142#0#PHP" expanded="true" />
+            <element signature="e#1728#1796#0#PHP" />
+            <element signature="e#1801#2204#0#PHP" />
           </folding>
         </state>
       </provider>
@@ -413,6 +418,8 @@
           <caret line="55" column="68" selection-start-line="55" selection-start-column="68" selection-end-line="55" selection-end-column="68" />
           <folding>
             <element signature="e#118#142#0#PHP" expanded="true" />
+            <element signature="e#1728#1796#0#PHP" />
+            <element signature="e#1801#2204#0#PHP" />
           </folding>
         </state>
       </provider>
@@ -576,10 +583,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/BlogController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="60" column="59" selection-start-line="60" selection-start-column="59" selection-end-line="60" selection-end-column="59" />
+        <state relative-caret-position="462">
+          <caret line="98" column="49" selection-start-line="98" selection-start-column="49" selection-end-line="98" selection-end-column="49" />
           <folding>
             <element signature="e#118#142#0#PHP" expanded="true" />
+            <element signature="e#1728#1796#0#PHP" />
+            <element signature="e#1801#2204#0#PHP" />
           </folding>
         </state>
       </provider>
