@@ -39,6 +39,14 @@ class BlogPost
      */
     private $slug;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="posts")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $author;
+
+
+
 
     public function getId(): ?int
     {
@@ -92,5 +100,24 @@ class BlogPost
         $this->slug = $slug;
         return $this;
     }
+
+    /**
+     * @return User
+     */
+    public function getAuthor(): User
+    {
+        return $this->author;
+    }
+
+    /**
+     * @param User $author
+     * @return BlogPost
+     */
+    public function setAuthor(User $author): self
+    {
+        $this->author = $author;
+        return $this;
+    }
+
 
 }

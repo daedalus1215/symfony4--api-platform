@@ -28,6 +28,14 @@ class Comment
      */
     private $published;
 
+
+    /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\User", inversedBy="comments")
+     * @ORM\JoinColumn(nullable=false)
+     */
+    private $author;
+
+
     public function getId(): ?int
     {
         return $this->id;
