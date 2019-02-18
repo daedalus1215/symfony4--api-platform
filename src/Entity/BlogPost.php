@@ -2,10 +2,13 @@
 
 namespace App\Entity;
 
+
+use ApiPlatform\Core\Annotation\ApiResource;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\BlogPostRepository")
+ * @ApiResource()
  */
 class BlogPost
 {
@@ -79,7 +82,7 @@ class BlogPost
     }
 
 
-    public function getSlug(): String
+    public function getSlug(): ?String
     {
         return $this->slug;
     }
